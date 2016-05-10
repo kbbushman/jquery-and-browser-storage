@@ -26,22 +26,25 @@ competencies: Front-end intro
 - Read and write basic vanilla Javascript
 
 ### Why are we doing this?
+In this Unit we will be building Browser games with HTML, CSS and client-side JavaScript. Although we are not yet ready to connect a database on the backend or store data on a server, the browser offers the ability to persist data locally using `sessionStorage`, `localStorage` and some other options we may explore later in the course.
+
+Creating a game, you may wish to allow your users to store their names and high scores, or keep track of some other simple data.
+
+[Here](https://developer.mozilla.org/en-US/docs/Web/API/Storage) is a look at some documentation for the Web Storage API.
 
 ## Warm-up
 Before we begin, let's look at the files in `browser-storage-examples`
 `sessionStorage.html` is the most basic. We will go through this line-by-line in class.
-`localStorage_1.html` does the same thing, but it adds the clear button.
+`localStorage1.html` does the same thing, but it adds the clear button.
+`localStorage2.html` takes things a bit farther. Take a look at the code and _without opening it in the browser_ see if you can explain what's happening.
 
-Let's brainstorm something else we can do with localStorage and edit the code in class, together, to do that. _One suggestion would be to create an array of strings and iterate through the array to display different text with each click._
+Let's brainstorm some other tasks we can accomplish with localStorage or sessionStorage
 
 ## Instructions:
 
-- Open SublimeText3 and install the [Bootstrap Snippets](https://packagecontrol.io/packages/Bootstrap%203%20Snippets) package.
-- Restart SublimeText3 (close and re-open the application)
-- Type 'bs3-template:html5' and hit `tab`
-- Make any changes you need (language = 'en', title, etc)
-- Add `http` to all the CDN links
-- Scroll down to below the `<h1>` tag and type 'bs3-form' and press `tab` again
-- Add any form elements you wish and try to store the input data using browser storage.
+- Divide into groups of 3-4
+- Figure out something to keep track of on a simple single-page web app
+- Build it!
+
 
 _Remember: `localStorage` and `sessionStorage` only store strings, so you may need to `parseInt()` if you need to do anything with the user data after it has been entered._
