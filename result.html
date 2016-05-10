@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="result"></div>
+
+    <script type="text/javascript">
+
+    $(function () {
+            $("#result").html("<h3>Thanks, " + localStorage.getItem("name") + "! Your message has been sent!</h3>");
+    });
+    </script>
+
+</body>
+</html>
