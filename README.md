@@ -48,3 +48,8 @@ Let's brainstorm some other tasks we can accomplish with localStorage or session
 
 
 _Remember: `localStorage` and `sessionStorage` only store strings, so you may need to `parseInt()` if you need to do anything with the user data after it has been entered._
+
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.

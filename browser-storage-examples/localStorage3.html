@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>localStorage 3</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="result.html" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+    </div>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg"></textarea>
+    </div>
+
+    <button>Send your message</button>
+
+</form>
+
+    <script type="text/javascript">
+    $().ready(function(){
+                $("button").click(function(){
+                    localStorage.setItem("name", $("#name").val());
+                    localStorage.setItem("mail", $("#mail").val());
+                    // You really don't want to store the user's password in localStorage...
+                    // localStorage.setItem("password", $("#password").val());
+                    localStorage.setItem("msg", $("#msg").val());
+                });
+    });
+    </script>
+
+</body>
+</html>
